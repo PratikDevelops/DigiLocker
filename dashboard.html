@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocLock Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <header>
+      <h1>DocLock Dashboard</h1>
+    </header>
+
+    <div class="container dashboard-container">
+      <!-- Upload Section -->
+      <div class="upload-section">
+        <div class="upload-card" data-type="aadhaar">
+          <h2>Aadhaar Card</h2>
+          <img
+            src="aadhar.jpg"
+            class="upload-icon"
+            alt="Aadhaar Icon"
+            onclick="uploadDocument('aadhaar')"
+          />
+          <input
+            type="file"
+            accept="image/*,application/pdf"
+            style="display: none"
+          />
+          <button class="upload-button">Upload Aadhaar Card</button>
+        </div>
+        <div class="upload-card" data-type="pan">
+          <h2>PAN Card</h2>
+          <img
+            src="pan-icon.png"
+            class="upload-icon"
+            alt="PAN Icon"
+            onclick="uploadDocument('pan')"
+          />
+          <input
+            type="file"
+            accept="image/*,application/pdf"
+            style="display: none"
+          />
+          <button class="upload-button">Upload PAN Card</button>
+        </div>
+        <div class="upload-card" data-type="driving-license">
+          <h2>Driving License</h2>
+          <img
+            src="driving-license-icon.png"
+            class="upload-icon"
+            alt="Driving License Icon"
+            onclick="uploadDocument('driving-license')"
+          />
+          <input
+            type="file"
+            accept="image/*,application/pdf"
+            style="display: none"
+          />
+          <button class="upload-button">Upload Driving License</button>
+        </div>
+        <div class="upload-card" data-type="voting-card">
+          <h2>Voting Card</h2>
+          <img
+            src="voting-card-icon.png"
+            class="upload-icon"
+            alt="Voting Card Icon"
+            onclick="uploadDocument('voting-card')"
+          />
+          <input
+            type="file"
+            accept="image/*,application/pdf"
+            style="display: none"
+          />
+          <button class="upload-button">Upload Voting Card</button>
+        </div>
+        <div class="upload-card" data-type="hsc-marksheet">
+          <h2>HSC Marksheet</h2>
+          <img
+            src="hsc-marksheet-icon.png"
+            class="upload-icon"
+            alt="HSC Marksheet Icon"
+            onclick="uploadDocument('hsc-marksheet')"
+          />
+          <input
+            type="file"
+            accept="image/*,application/pdf"
+            style="display: none"
+          />
+          <button class="upload-button">Upload HSC Marksheet</button>
+        </div>
+        <div class="upload-card" data-type="ssc-marksheet">
+          <h2>SSC Marksheet</h2>
+          <img
+            src="ssc-marksheet-icon.png"
+            class="upload-icon"
+            alt="SSC Marksheet Icon"
+            onclick="uploadDocument('ssc-marksheet')"
+          />
+          <input
+            type="file"
+            accept="image/*,application/pdf"
+            style="display: none"
+          />
+          <button class="upload-button">Upload SSC Marksheet</button>
+        </div>
+        <div class="upload-card" data-type="other">
+          <h2>Other Document</h2>
+          <img
+            src="other-document-icon.png"
+            class="upload-icon"
+            alt="Other Document Icon"
+            onclick="uploadDocument('other')"
+          />
+          <input
+            type="file"
+            accept="image/*,application/pdf"
+            style="display: none"
+          />
+          <button class="upload-button">Upload Other Document</button>
+        </div>
+      </div>
+
+      <!-- Success Message -->
+       
+      <div id="upload-status" class="upload-status"></div>
+
+      <!-- Documents List -->
+      <div id="documents-list" class="documents-list">
+        <!-- Dynamic content will be inserted here by JavaScript -->
+      </div>
+    </div>
+
+    <!-- Preview Modal -->
+    <div id="preview-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div id="modal-preview-content"></div>
+        <div class="modal-actions">
+          <button id="download-btn">Download</button>
+          <button id="whatsapp-share-btn">Share on WhatsApp</button>
+          <button id="close-modal-btn">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="dashboard.js"></script>
+  </body>
+</html>

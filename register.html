@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - DocLock</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Section -->
+        <div class="left-section">
+            <div class="illustration">
+                <img src="illustration.png" alt="Illustration">
+            </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="logo.png" alt="DigiLocker Logo">
+            </div>
+
+            <h1>Register</h1>
+
+            <form id="register-form">
+                <!-- Username Field with Icon -->
+                <div class="input-group">
+                    <label for="username">
+                        <i class="fas fa-user"></i>
+                    </label>
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+
+                <!-- Email Field with Icon -->
+                <div class="input-group">
+                    <label for="email">
+                        <i class="fas fa-envelope"></i>
+                    </label>
+                    <input type="email" id="email" placeholder="Your email" required>
+                </div>
+
+                <!-- Password Field with Icon -->
+                <div class="input-group">
+                    <label for="password">
+                        <i class="fas fa-lock"></i>
+                    </label>
+                    <input type="password" id="password" placeholder="Create password" required>
+                </div>
+
+                <!-- Register Button -->
+                <button type="submit">Register</button>
+
+                <!-- Message -->
+                <p id="register-message" class="success-message"></p>
+            </form>
+
+            <p><a href="index.html">Already have an account? Login</a></p>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="register.js"></script>
+
+    <!-- EmailJS Library -->
+    <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("pTV87sASgMu5Dxtyj"); // Replace with your EmailJS user ID
+        })();
+    </script>
+</body>
+</html>
