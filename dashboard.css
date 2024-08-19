@@ -303,18 +303,6 @@ body.dark-mode select {
     display: block;
   }
   
-  .modal {
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.modal.show {
-    opacity: 1;
-    visibility: visible;
-}
-
-  
 /* Responsive Design */
 @media (max-width: 1200px) {
     .container {
