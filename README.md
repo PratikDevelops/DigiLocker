@@ -3,7 +3,7 @@
 
 DocLock is a web-based application designed to securely store and manage your personal documents. Inspired by DigiLocker, DocLock aims to provide a simple, yet effective solution for document storage without the need for third-party services.
 
-![DocLock Screenshot](path/to/screenshot.png) <!-- Add a screenshot of your app here -->
+![DocLock Screenshot](dashboard.png) <!-- Add a screenshot of your app here -->
 
 ## Features
 
